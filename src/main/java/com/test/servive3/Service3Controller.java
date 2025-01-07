@@ -13,7 +13,8 @@ public class Service3Controller {
     
     @GetMapping("/callService1")
     public String callService1() {
-        String service1Url = "http://service1/hello";
+        //String service1Url = "http://service1/hello";
+	    String service1Url = "https://microservice-1-git-openshiftproject.apps-crc.testing/hello";
         return restTemplate.getForObject(service1Url, String.class);
     }
 
