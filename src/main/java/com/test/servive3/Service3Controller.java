@@ -14,8 +14,9 @@ public class Service3Controller {
     @GetMapping("/callService1")
     public String callService1() {
         //String service1Url = "http://service1/hello";
-	    String service1Url = "http://microservice-1-git:8081/hello";
-        return restTemplate.getForObject(service1Url, String.class);
+	//    String service1Url = "http://microservice-1-git:8081/hello";
+        //return restTemplate.getForObject(service1Url, String.class);
+	    return "service 3 working";
     }
 
 }
